@@ -1,0 +1,55 @@
+Construo Installation V0.2.0
+============================
+
+Construo should be compilable on every Unix like OS with X11 libraries
+installed, no extra libraries beside the X11 libraries and header
+files are required (make sure that you have the x11-devel packages of
+your distro installed if you not already have).
+
+However Construo can make use of OpenGL via the Glut library, if it is
+available, the ./configure script should find that out itself and
+create the Glut binaries if the needed libraries are found.
+
+After configuration you will see a line like:
+
+   Targets  =  construo.x11 construo.glut construo.freeglut
+
+Which will tell you which display targets will be build. If you are
+happy with that, simply call 'make' which will build all targets.
+
+Once make is finished you should have one or construo.* binaries
+available, where * is the name of the display target. These binaries
+should be runable from the current directory, there is no need to
+install them and installation isn't recomment and hasn't been tested
+much.
+
+
+Compile Summary:
+================
+
+To configure and compile construo type:
+
+ % ./configure
+ % make
+
+To run construo type:
+
+ % ./construo.x11 # or one of the other available binaries
+
+There is no need to install construo, it will run from its current
+directory. './construo.x11 --help' will show you some available
+options (fullscreen, etc.), but not all of them will work with all
+targets.
+
+
+Problems:
+=========
+
+If you encounter compilation problems which you can't solve, write a mail to:
+
+  Ingo Ruhnke <grumbel@gmx.de>
+
+Generic usage instructions for the ./configure script can be found in
+the file INSTALL.configure.
+
+# EOF #
