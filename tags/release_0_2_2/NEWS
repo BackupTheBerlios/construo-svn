@@ -1,0 +1,107 @@
+Construo 0.2.2
+==============
+
+ * added scaling, press 's' in select-mode
+
+ * fixed problem with new particles disappearing in run-mode
+
+ * made the ground look a bit nicer
+
+ * fixed speed problem in the X11 target
+
+
+Construo 0.2.1
+==============
+
+ * added switch to disable thick lines in X11
+
+ * added runtime switching to fullscreen, press 'F11'
+
+ * different cursors for different tools
+
+ * added a blender like 'remove doubles', press 'j'
+
+ * fixed 'make install'
+
+ * added grid support (press 'g')
+
+ * fixes crash-bug in with user/ directory
+
+ * fixed some missing keybindings fixed
+
+ * fixed missing #ifdef/#endif for XVidMode, caused compile failure if
+   Xvidmode is not present
+
+ * added zlib support for compressed construo files (.construo.gz)
+
+ * some small optimizations 
+
+ * fixed problems with 16bit XServers
+
+ * more example constrution
+ 
+
+Construo 0.2.0
+==============
+
+ * Fixed id-overlap bug which caused construction to get corrput
+  (wrong particles connected together)
+
+ * added zooming plus mouse-wheel support
+
+ * added scrolling with cursorkeys and mouse
+
+ * added simple GUI
+
+ * House of Horror Part1 and Part2 added (currently a bit broken due
+   to changed physics)
+ 
+ * fullscreen support added
+
+ * moving of objects is possible 
+
+ * rotation of objects is possible
+ 
+ * added optional glut support for hardware accelerated OpenGL
+
+ * support for anti-aliased lines and transparency (only under glut)
+
+ * fixed particle physics, particle mass now has an impact
+
+ * particle velocity editing is possible
+
+ * added file-manager with thumbnail preview
+
+ * added custom collider objects (aka boxes)
+
+ * moving of colliders in a running simulation is possible
+
+ * some bit more actions are undoable
+
+ * lots of new bugs and missing features, see file BUGS for the known
+   issues (no file overwrite warning, so be carefull!)
+
+
+Construo 0.1.0
+==============
+
+ * fixed-particles are now possible
+ 
+ * in-game help screen available
+
+ * removal of particles is possible
+
+ * rewind to the state before the 'run' is possible (aka undo)
+
+ * rewritten to use only plain Xlib, no additional libraries required
+
+ * XML is replaced by s-expressions, this removes another library
+   dependency and results in better readable files
+
+ * added a bunch of example files
+
+ * added abstraction layer, ports to other libraries or OSs should be
+   quite easy (OpenGL port might follow sooner or later)
+
+
+# EOF #

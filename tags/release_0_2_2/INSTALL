@@ -1,0 +1,18 @@
+Installing Construo
+===================
+
+To compile Construo you should only need to do:
+
+ % ./configure
+ % make
+
+The configure script should automatically detect which libraries will
+be available and build the correct binaries. The OpenGL version of
+construo is callect 'construo.glut' and the Xlib version is called
+'construo.x11', simply run the target which you like better. You can
+run Construo directory from its source directory, so there is no need
+to install it, but if you want to do so, you can do it by:
+
+ % make install
+
+# EOF #
