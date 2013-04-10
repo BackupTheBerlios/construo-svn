@@ -129,7 +129,7 @@ case "$target_os" in
         AC_CHECK_LIB(glut, glutMainLoop,
         [
           ConstruoTargets="$ConstruoTargets construo.glut"
-          glut_LIBS="-lglut -lGLU"
+          glut_LIBS="-lglut -lGLU -lGL"
           AC_SUBST(glut_LIBS)
           AC_SUBST(glut_CXXFLAGS, "")
          ],
