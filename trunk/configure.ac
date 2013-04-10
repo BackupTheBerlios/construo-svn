@@ -16,7 +16,7 @@
 ##  Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 
 # init automake/conf
-AC_INIT(construo, 0.2.3-CVS)
+AC_INIT(construo, 0.2.3)
 AC_CANONICAL_TARGET
 AM_INIT_AUTOMAKE
 AC_CONFIG_SRCDIR(src/construo.hpp)
